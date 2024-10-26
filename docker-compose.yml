@@ -1,0 +1,9 @@
+version: '3.8'  # Phiên bản Docker Compose
+
+services:
+  my_debian_service:  # Tên dịch vụ
+    build:  # Xây dựng từ Dockerfile
+      context: .  # Thư mục chứa Dockerfile
+      dockerfile: Dockerfile  # Tên file Dockerfile
+    container_name: my_debian_git_container  # Tên container
+    tty: true  # Chạy container trong chế độ TTY
